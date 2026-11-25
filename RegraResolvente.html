@@ -6,15 +6,12 @@
 <body>
   <script>
     let repetir = true;
-
     while (repetir) {
       let a = Number(prompt("Valor de a:"));
-
       while (a === 0) {
         alert("O valor de a não pode ser zero. Tenta novamente.");
         a = Number(prompt("Valor de a:"));
       }
-
       let b = Number(prompt("Valor de b:"));
       let c = Number(prompt("Valor de c:"));
       let delta = b * b - 4 * a * c;
@@ -27,7 +24,6 @@
       } else {
         alert("Não existem raízes reais.");
       }
-
       repetir = confirm("Queres fazer outro cálculo?");
     }
   </script>
